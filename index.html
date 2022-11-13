@@ -17,14 +17,14 @@
   <body>
     <div id="root">
       <header>
-        <h1>MY TO-DO LIST</h1>
+        <h1></i>TO-DO LIST</h1>
         <input v-bind:value="task" @input="itemValue" type="text" placeholder="ajouter une nouvelle tâche"/>
         <button  @click="clickButton"><i class="fa-solid fa-plus"></i></button>
       </header>
 
       <section>
         <div id="toDo">
-          <h2>TO DO</h2>
+          <h2>TO DO <i class="fa-solid fa-clipboard-list"></i></h2>
 
           <ul>
             <li v-for="task in listOfToDo" >{{task}} 
@@ -48,8 +48,8 @@
         </div> -->
 
         <div id="done">
-          <h2>DONE</h2>
-          <li v-for="task in listOfDone" >{{task}} 
+          <h2>DONE <i class="fa-solid fa-clipboard-check"></i></h2>
+          <li v-for="task in listOfDone" >{{task}} <i class="fa-solid fa-check"></i>
 
           </li>
         </div>
