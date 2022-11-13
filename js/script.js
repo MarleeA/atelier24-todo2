@@ -32,6 +32,7 @@ const toDoList = {
         //     this.listOfDoing.push(taskToMove)
         // } else 
         if(value==='DONE'){
+          this.listOfToDo.pop(taskToMove)
             this.listOfDone.push(taskToMove)
             
         }
